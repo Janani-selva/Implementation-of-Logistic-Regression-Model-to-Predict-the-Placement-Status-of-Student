@@ -25,6 +25,7 @@ import pandas as pd
 from sklearn.preprocessing import LabelEncoder
 data = pd.read_csv('/content/Placement_Data.csv')
 data.head()
+
 data1 = data.copy()
 data1 = data1.drop(["sl_no", "salary"], axis = 1)
 data1.head()
@@ -62,9 +63,8 @@ classification_report1 = classification_report(y_test, y_pred)
 print(classification_report1)
 lr.predict([[1, 80, 1, 90, 1, 1, 90, 1, 0, 85, 1, 85]])
 ```
-
 ## Output:
-![image](https://github.com/user-attachments/assets/e738b6f9-fb64-485b-b622-2906de43bd83)
+![image](https://github.com/user-attachments/assets/51e69677-7da4-4902-a329-121e0f1f9ea6)
 
 
 ## Result:
