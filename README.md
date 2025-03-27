@@ -1,4 +1,4 @@
-# Implementation-of-Logistic-Regression-Model-to-Predict-the-Placement-Status-of-Student
+## Implementation-of-Logistic-Regression-Model-to-Predict-the-Placement-Status-of-Student
 
 ## AIM:
 To write a program to implement the the Logistic Regression Model to Predict the Placement Status of Student.
@@ -25,7 +25,6 @@ import pandas as pd
 from sklearn.preprocessing import LabelEncoder
 data = pd.read_csv('/content/Placement_Data.csv')
 data.head()
-
 data1 = data.copy()
 data1 = data1.drop(["sl_no", "salary"], axis = 1)
 data1.head()
@@ -64,7 +63,27 @@ print(classification_report1)
 lr.predict([[1, 80, 1, 90, 1, 1, 90, 1, 0, 85, 1, 85]])
 ```
 ## Output:
-![image](https://github.com/user-attachments/assets/51e69677-7da4-4902-a329-121e0f1f9ea6)
+## Placement Data
+![image](https://github.com/user-attachments/assets/24e8f9cb-1ef8-4a18-b48e-7c3fe78444f0)
+
+## Checking the null() function
+![image](https://github.com/user-attachments/assets/fa68579c-024f-499e-90ed-2b88e2e2c2b1)
+
+## Print Value
+![image](https://github.com/user-attachments/assets/fca46381-8c90-4251-93da-d7eda4442e06)
+
+## Y-Prediction Value
+![image](https://github.com/user-attachments/assets/17e87006-8f1d-4537-8e5c-ab6fe84021de)
+
+## Confusion array
+![image](https://github.com/user-attachments/assets/9fd0e251-840e-4562-94a3-3cadda38c3fe)
+
+## Classification report
+![image](https://github.com/user-attachments/assets/df62e8bc-70f0-4263-adb1-1c01f657517b)
+
+## Prediction of LR
+![image](https://github.com/user-attachments/assets/6ae6a337-1bba-415b-9062-a865eadddf70)
+
 
 
 ## Result:
